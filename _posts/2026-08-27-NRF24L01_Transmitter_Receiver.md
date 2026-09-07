@@ -4,7 +4,7 @@ date: 2026-08-27 16:58:00 -500
 categories: [STM32, RF]
 tags: [electronics, stm32, rf]
 image:
-  path: /assets/img/RC_car/bronc.jpg
+  path: /assets/img/nrf24l01/stm32l432kc-nrf24l01-joysticks.jpg
   alt: 1/24 Bronco wired up to the STM32, DRV8874 and battery.
 ---
 
