@@ -57,9 +57,11 @@ To finish configuring for SPI, I set the pin PA4 as a GPIO output. This pin will
 ### CE
 Lastly, I’ve set pin PA3 as a GPIO output. While not a part of the SPI process, this pin will be used to trigger transmissions of the data packets that were sent to the nRF over SPI.
 
+![Breadboard wiring of all components](/assets/img/nrf24l01/stm32l432kc-nrf24l01-joysticks-wired.jpg)
+
 ## Code
 
-To view the source code for this project, please refer to my [BroncoTx](https://github.com/jonas-mooney/BroncoTx) and [BroncoRx](https://github.com/jonas-mooney/BroncoRx) repos on Github.
+To view the source code for this project, please refer to my [BroncoTx](https://github.com/jonas-mooney/BroncoTx){:target="_blank"} and [BroncoRx](https://github.com/jonas-mooney/BroncoRx){:target="_blank"} repos on Github.
 
 The following code snippets cover the main.c file of the transmitter, but not every function that is called from main.c. To view the remainder of the application code, view the registers.c and joystick.c files in the BroncoTx repo and the main.c file in the BroncoRx repo.
 
