@@ -12,6 +12,8 @@ The nRF24L01+ is an awesome and compact radio transceiver IC from Nordic. It ope
 
 For this demo, I’ve set up two STM32 Nucleo boards to control a pair of nRF24L01+ modules. The first STM32 sets its nRF as a transmitter and takes input from two joysticks. It then packages up the joystick data and sends it over the air to the other nRF/STM32 pair which is configured as a receiver. Both the transmitter and receiver STM32s log the joystick axes to the console.
 
+![Breadboard wiring of all components](/assets/img/nrf24l01/stm32l432kc-nrf24l01-joysticks-wired.jpg)
+
 ## Components
 - 2x STM32 Nucleo L432KC
 - 2x nRF24L01+ Modules
@@ -56,8 +58,6 @@ To finish configuring for SPI, I set the pin PA4 as a GPIO output. This pin will
 
 ### CE
 Lastly, I’ve set pin PA3 as a GPIO output. While not a part of the SPI process, this pin will be used to trigger transmissions of the data packets that were sent to the nRF over SPI.
-
-![Breadboard wiring of all components](/assets/img/nrf24l01/stm32l432kc-nrf24l01-joysticks-wired.jpg)
 
 ## Code
 
